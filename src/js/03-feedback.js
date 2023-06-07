@@ -33,8 +33,8 @@ function handlePageLoad() {
 }
 
 function fillFormFields(formData) {
-  refs.emailInput.value = formData.email;
-  refs.messageInput.value = formData.message;
+  refs.emailInput.value = formData.email || '';
+  refs.messageInput.value = formData.message || '';
 }
 
 function clearFormFields() {

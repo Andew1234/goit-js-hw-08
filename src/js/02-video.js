@@ -8,5 +8,5 @@ const updateCurrentTime = ({ seconds }) => {
   localStorage.setItem(CURRENT_TIME, seconds);
 };
 
-player.on('timeupdate', throttle(updateCurrentTime, 200));
+player.on('timeupdate', throttle(updateCurrentTime, 1000));
 player.setCurrentTime(localStorage.getItem(CURRENT_TIME) || 0);
